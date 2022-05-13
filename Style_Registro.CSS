@@ -1,0 +1,95 @@
+/* ////////////////////////////////////////////////////geral \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+  }
+  
+  input, label {
+    display: block;
+    outline: none;
+    width: 100%;
+  }
+  
+  body {
+    padding-top: 15px;
+    background-color:rgb(17, 54, 71) ;
+  }
+  
+  /* //////////////////////////////////////// formulario \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+  #container-principal {
+    width: 400pt;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10pt;
+    padding: 25px;
+  }
+  
+  #container-principal h1 {
+    text-align: center;
+    margin-bottom: 20pt;
+    font-size: 20pt;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .linha-completa {
+    flex: 1 1 100%;
+  position: relative;
+  }
+
+  #radio-entrada {
+    padding-top: 20px;
+    padding-left: 10px;
+    position: relative;
+    display: flex;
+  } 
+
+  #radio-saida {
+    padding-top: 20px;
+    padding-right: 150px;
+    position: relative;
+    display: flex;
+  } 
+  
+  .meia-linha {
+    flex: 1 1 45%;
+    position: relative;
+  }
+  
+  .espaçamento {
+    margin-right: 2.5%;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 12pt;
+  }
+  
+  input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  
+  input:focus {
+    border-color: #006be6;
+  }
+  
+  input[type="submit"] {
+    background-color: #006be6;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+  }
