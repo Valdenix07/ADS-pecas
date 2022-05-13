@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro de Produto</title>
+  <link rel="stylesheet" href="Style_Registro.css">
+</head>
+<body>
+  <div id="container-principal"> <!--Container Branco com todas as partes do formulario-->
+    <h1>Cadastre o produto no sistema</h1>
+    <form id="register-form" action="">
+      
+<!--Container com descrevendo se o produto está saindo ou entrando no estoque-->
+      <label for="Entrada">Operação</label>
+      <div id="radio-entrada">
+        <input type="radio" name="Operação">
+        <label for="Entrada">Entrada </label>
+      </div>    
+      
+      <div id="radio-saida">
+        <input type="radio" name="Operação">
+        <label for="Saída">Saída</label>
+      </div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!------------------Container que utiliza uma linha completa para nome do produto--------------------->
+      <div class="linha-completa">
+            <label for="Nome">Nome do produto</label>
+            <input type="text" name="Nome" id="Nome" placeholder="Insira o Nome do produto">
+      </div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!----------------Container que utiliza uma linha completa para descrição do produto------------------>
+      <div class="linha-completa">
+        <label for="Descrição">Descrição do produto</label>
+        <input type="text" name="Descrição" id="Descrição" placeholder="Insira a descrição do produto">
+      </div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!-------------------Container que utiliza uma meia-linha para código do produto---------------------->
+      <div class="meia-linha espaçamento">
+          <label for="Código">Código</label>
+          <input type="text" name="Código" id="Código" placeholder="Insira código do produto">
+      </div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!-------------------Container que utiliza uma meia-linha para valor do produto----------------------->
+      <div class="meia-linha">
+          <label for="Valor">Valor</label>
+          <input type="text" name="Valor" id="Valor" placeholder="Digite o valor do produto">
+      </div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!-----------------Container que utiliza uma meia-linha para fornecedor do produto-------------------->
+      <div class="meia-linha espaçamento">
+        <label for="Fornecedor">Fornecedor</label>
+        <input type="text" name="Fornecedor" id="Fornecedor" placeholder="Insira nome do fornecedor">
+      </div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!-----------------Container que utiliza uma meia-linha para quantidade do produto-------------------->
+      <div class="meia-linha">
+        <label for="Quantidade">Quantidade em estoque</label>
+        <input type="number" name="Quantidade" id="Quantidade" placeholder="Insira quantidade em estoque">
+      </div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!-------------Container que utiliza uma linha completa para botão de registrar produto---------------->
+      <div class="linha-completa">
+        <input id="btn-submit" type="submit" value="Registrar">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
